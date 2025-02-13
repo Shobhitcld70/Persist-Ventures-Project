@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --neon-blue: #00f3ff;
+  --neon-purple: #bf00ff;
+  --dark-bg: #0a0a0a;
+  --dark-card: #111111;
+  --dark-card-hover: #1a1a1a;
+}
+
+.bg-dark-gradient {
+  background: linear-gradient(to bottom, var(--dark-bg), #000000);
+}
+
+.text-neon-blue {
+  color: var(--neon-blue);
+  text-shadow: 0 0 10px var(--neon-blue);
+}
+
+.text-neon-purple {
+  color: var(--neon-purple);
+  text-shadow: 0 0 10px var(--neon-purple);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--neon-purple);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-blue);
+}
+
+/* Glow effects */
+.glow {
+  box-shadow: 0 0 20px var(--neon-blue);
+}
+
+.glow-purple {
+  box-shadow: 0 0 20px var(--neon-purple);
+}
